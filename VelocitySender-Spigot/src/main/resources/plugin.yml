@@ -1,0 +1,10 @@
+name: VelocitySender
+version: 1.0
+main: io.github.bigcookie233.velocitysender.VelocitySender
+author: BigCookie233
+commands:
+  velocitysender:
+    description: VelocitySender
+    usage: /velocitysender <server>
+    permission: op
+    aliases: vs
