@@ -1,4 +1,4 @@
-package io.github.bigcookie233.velocitysender;
+package io.github.bigcookie233.velocityteleporter;
 
 import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
@@ -9,14 +9,14 @@ import com.velocitypowered.api.proxy.messages.LegacyChannelIdentifier;
 import com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier;
 import org.slf4j.Logger;
 
-@Plugin(id = "velocitysender", name = "VelocitySender", version = "1.0", authors = {"Bigcookie233"})
-public class VelocitySender {
-    private static VelocitySender instance;
+@Plugin(id = "velocityteleporter", name = "VelocityTeleporter", version = "1.1", authors = {"Bigcookie233"})
+public class VelocityTeleporter {
+    private static VelocityTeleporter instance;
     private final ProxyServer server;
     public final Logger logger;
 
     @Inject
-    public VelocitySender(ProxyServer server, Logger logger) {
+    public VelocityTeleporter(ProxyServer server, Logger logger) {
         instance = this;
         this.server = server;
         this.logger = logger;
@@ -33,7 +33,7 @@ public class VelocitySender {
         return server;
     }
 
-    public static VelocitySender getInstance() {
+    public static VelocityTeleporter getInstance() {
         return instance;
     }
 }

@@ -1,4 +1,4 @@
-package io.github.bigcookie233.velocitysender;
+package io.github.bigcookie233.velocityteleporter;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -22,7 +22,7 @@ public class onCommand implements CommandExecutor, TabCompleter {
             return false;
         }
 
-        VelocitySender.getInstance().sendMsg((Player) commandSender, strings[0]);
+        VelocityTeleporter.getInstance().sendMsg((Player) commandSender, strings[0]);
 
         return true;
     }

@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.github.bigcookie233.velocitysender</groupId>
-        <artifactId>VelocitySender</artifactId>
-        <version>1.0</version>
+        <groupId>io.github.bigcookie233.velocityteleporter</groupId>
+        <artifactId>VelocityTeleporter</artifactId>
+        <version>1.1</version>
     </parent>
 
-    <artifactId>VelocitySender-Spigot</artifactId>
+    <artifactId>VelocityTeleporter-Velocity</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,16 +19,16 @@
 
     <repositories>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <groupId>com.velocitypowered</groupId>
+            <artifactId>velocity-api</artifactId>
+            <version>3.1.1</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
