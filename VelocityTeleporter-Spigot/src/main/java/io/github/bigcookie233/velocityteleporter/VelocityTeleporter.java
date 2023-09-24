@@ -17,7 +17,7 @@ public class VelocityTeleporter extends JavaPlugin {
 
     public void sendMsg(Player player, String target) {
         ByteArrayDataOutput out = ByteStreams.newDataOutput();
-        out.writeUTF("TELEPORT");
+        out.writeUTF("VTELEPORT");
         out.writeUTF(player.getUniqueId().toString());
         out.writeUTF(target);
         player.sendPluginMessage(this, "velocityteleporter:main", out.toByteArray());

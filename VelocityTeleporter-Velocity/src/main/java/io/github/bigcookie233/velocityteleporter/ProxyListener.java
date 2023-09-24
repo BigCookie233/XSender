@@ -24,12 +24,12 @@ public class ProxyListener {
         if (!(event.getSource() instanceof ServerConnection))
             return;
 
-        if (!event.getIdentifier().getId().equals("velocitysender:main"))
+        if (!event.getIdentifier().getId().equals("velocityteleporter:main"))
             return;
 
         ByteArrayDataInput input = event.dataAsDataStream();
         String sChannel = input.readUTF();
-        if (!sChannel.equals("TELEPORT"))
+        if (!sChannel.equals("VTELEPORT"))
             return;
 
         String s1 = input.readUTF();

@@ -24,9 +24,8 @@ public class VelocityTeleporter {
 
     @Subscribe
     public void onProxyInitialize(ProxyInitializeEvent event) {
-        server.getChannelRegistrar().register(new LegacyChannelIdentifier("velocitysender:main"), MinecraftChannelIdentifier.create("velocitysender", "main"));
+        server.getChannelRegistrar().register(new LegacyChannelIdentifier("velocityteleporter:main"), MinecraftChannelIdentifier.create("velocityteleporter", "main"));
         server.getEventManager().register(this, new ProxyListener());
-        System.out.println("register");
     }
 
     public ProxyServer getServer() {
