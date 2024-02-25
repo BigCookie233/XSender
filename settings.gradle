@@ -1,0 +1,3 @@
+rootProject.name = 'VelocityTeleporter'
+include(':VelocityTeleporter-Spigot')
+include(':VelocityTeleporter-Velocity')
