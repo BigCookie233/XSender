@@ -1,6 +1,8 @@
-# Velocity Teleporter
+<h1 align="center">Velocity Teleporter<br>
+    <a href="https://github.com/BigCookie233/VelocityTeleporter/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/github/license/BigCookie233/VelocityTeleporter"></a>
+</h1>
 
-A Minecraft plugin for Velocity.
+<p align="center">A Minecraft plugin for Velocity.</p>
 
 # Features
 
@@ -8,4 +10,4 @@ A Minecraft plugin for Velocity.
 
 # Commands
 
-- /vt \<server\>
+- /vt \<server\> (optional)\<player\>
