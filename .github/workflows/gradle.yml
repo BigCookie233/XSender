@@ -10,8 +10,6 @@ name: Java CI with Gradle
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
@@ -34,7 +32,7 @@ jobs:
       uses: gradle/actions/setup-gradle@417ae3ccd767c252f5661f1ace9f835f9654f2b5 # v3.1.0
 
     - name: Build with Gradle Wrapper
-      run: sh gradlew publish
+      run: sh gradlew release
 
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4.3.1
