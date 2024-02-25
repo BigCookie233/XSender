@@ -13,7 +13,8 @@ dependencies {
 
 description = 'VelocityTeleporter-Velocity'
 
-task publish(type: Copy) {
+task release(type: Copy) {
     from jar
     into '../build/artifacts'
+    group = 'build'
 }
