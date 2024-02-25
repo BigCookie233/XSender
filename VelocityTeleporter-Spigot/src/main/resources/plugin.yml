@@ -5,6 +5,6 @@ author: BigCookie233
 commands:
   velocityteleporter:
     description: VelocityTeleporter
-    usage: /velocityteleporter <server>
-    permission: op
+    usage: /velocityteleporter <server> <player>
+    permission: velocityteleporter.command.velocityteleporter
     aliases: vt
