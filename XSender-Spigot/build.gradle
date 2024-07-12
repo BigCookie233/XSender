@@ -13,7 +13,7 @@ dependencies {
 
 description = 'XSender-Spigot'
 
-task release(type: Copy) {
+tasks.register('release', Copy) {
     from jar
     into '../build/artifacts'
     group = 'build'
