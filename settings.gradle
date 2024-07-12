@@ -1,3 +1,3 @@
-rootProject.name = 'VelocityTeleporter'
-include(':VelocityTeleporter-Spigot')
-include(':VelocityTeleporter-Velocity')
+rootProject.name = 'XSender'
+include(':XSender-Spigot')
+include(':XSender-Velocity')

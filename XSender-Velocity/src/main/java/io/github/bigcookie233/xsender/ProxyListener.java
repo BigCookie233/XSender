@@ -1,4 +1,4 @@
-package io.github.bigcookie233.velocityteleporter;
+package io.github.bigcookie233.xsender;
 
 import com.google.common.io.ByteArrayDataInput;
 import com.velocitypowered.api.event.Subscribe;
@@ -16,7 +16,7 @@ public class ProxyListener {
     private final ProxyServer server;
 
     public ProxyListener() {
-        this.server = VelocityTeleporter.getInstance().getServer();
+        this.server = XSender.getInstance().getServer();
     }
 
     @Subscribe
@@ -24,12 +24,12 @@ public class ProxyListener {
         if (!(event.getSource() instanceof ServerConnection))
             return;
 
-        if (!event.getIdentifier().getId().equals("velocityteleporter:main"))
+        if (!event.getIdentifier().getId().equals("xsender:main"))
             return;
 
         ByteArrayDataInput input = event.dataAsDataStream();
         String sChannel = input.readUTF();
-        if (!sChannel.equals("VTELEPORT"))
+        if (!sChannel.equals("XSEND"))
             return;
 
         String s1 = input.readUTF();
