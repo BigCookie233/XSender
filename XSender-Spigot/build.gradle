@@ -4,16 +4,16 @@ plugins {
 
 apply from: '../build.gradle'
 
-version = '1.1'
+version = '1.2'
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT'
 }
 
-description = 'VelocityTeleporter-Spigot'
+description = 'XSender-Spigot'
 
-task release(type: Copy) {
+tasks.register('release', Copy) {
     from jar
     into '../build/artifacts'
     group = 'build'

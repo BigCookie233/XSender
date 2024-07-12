@@ -13,7 +13,7 @@ repositories {
     }
 }
 
-group = 'io.github.bigcookie233.velocityteleporter'
+group = 'io.github.bigcookie233.xsender'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'

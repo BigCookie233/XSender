@@ -4,16 +4,16 @@ plugins {
 
 apply from: '../build.gradle'
 
-version = '1.1'
+version = '1.2'
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
     compileOnly 'com.velocitypowered:velocity-api:3.1.1'
 }
 
-description = 'VelocityTeleporter-Velocity'
+description = 'XSender-Velocity'
 
-task release(type: Copy) {
+tasks.register('release', Copy) {
     from jar
     into '../build/artifacts'
     group = 'build'

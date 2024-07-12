@@ -1,4 +1,4 @@
-package io.github.bigcookie233.velocityteleporter;
+package io.github.bigcookie233.xsender;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -18,15 +18,15 @@ public class onCommand implements CommandExecutor, TabCompleter {
                 commandSender.sendMessage(ChatColor.RED + "You must be a player to run this command.");
                 return false;
             }
-            VelocityTeleporter.getInstance().sendMsg((Player) commandSender, strings[0]);
+            XSender.getInstance().sendMsg((Player) commandSender, strings[0]);
             return true;
         } else if (strings.length == 2) {
-            Player player = VelocityTeleporter.getInstance().getServer().getPlayer(strings[1]);
+            Player player = XSender.getInstance().getServer().getPlayer(strings[1]);
             if (player == null) {
                 commandSender.sendMessage(ChatColor.RED + "Player not found.");
                 return false;
             }
-            VelocityTeleporter.getInstance().sendMsg(player, strings[0]);
+            XSender.getInstance().sendMsg(player, strings[0]);
             return true;
         }
         return false;
