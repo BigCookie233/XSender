@@ -37,7 +37,7 @@ jobs:
     - name: Upload Build Artifacts
       uses: actions/upload-artifact@v4.3.1
       with:
-        name: Velocity Teleporter
+        name: XSender
         path: build/artifacts/*
         retention-days: 10d
 
