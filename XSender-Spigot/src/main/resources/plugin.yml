@@ -3,7 +3,7 @@ version: 1.2
 main: io.github.bigcookie233.xsender.XSender
 author: BigCookie233
 commands:
-  velocityteleporter:
+  xsender:
     description: XSender
     usage: /xsender <server> <player>
     permission: xsender.command.xsender
