@@ -29,6 +29,8 @@ public class ProxyListener {
         if (!event.getIdentifier().getId().equals("xsender:main"))
             return;
 
+        event.setResult(PluginMessageEvent.ForwardResult.handled());
+
         ByteArrayDataInput input = event.dataAsDataStream();
         String sChannel = input.readUTF();
         if (!sChannel.equals("XSEND"))

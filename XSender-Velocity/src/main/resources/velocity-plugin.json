@@ -1,8 +1,0 @@
-{
-  "id": "xsender",
-  "name": "XSender",
-  "version": "1.2",
-  "description": "",
-  "authors": ["BigCookie233"],
-  "main": "io.github.bigcookie233.xsender.XSender"
-}
