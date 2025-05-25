@@ -13,7 +13,7 @@ import org.slf4j.Logger;
 @Plugin(
         id = "xsender",
         name = "XSender",
-        version = "1.3",
+        version = "1.3.1",
         authors = {"Bigcookie233"}
 )
 public class XSender {
