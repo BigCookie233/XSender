@@ -1,6 +1,7 @@
 package io.github.bigcookie233.xsender;
 
 import com.google.common.io.ByteArrayDataInput;
+import com.google.inject.Inject;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.connection.PluginMessageEvent;
 import com.velocitypowered.api.proxy.ConnectionRequestBuilder;
@@ -15,8 +16,9 @@ import java.util.UUID;
 public class ProxyListener {
     private final ProxyServer server;
 
-    public ProxyListener() {
-        this.server = XSender.getInstance().getServer();
+    @Inject
+    public ProxyListener(ProxyServer server) {
+        this.server = server;
     }
 
     @Subscribe
